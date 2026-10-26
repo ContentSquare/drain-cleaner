@@ -61,6 +61,7 @@
     <log4j.version>2.24.3</log4j.version>
     <bouncycastle.version>1.80</bouncycastle.version>
     <skodjob.test-frame.version>1.0.0</skodjob.test-frame.version>
+    <com-aayushatharva-brotli4j.brotli4j.version>1.24.0</com-aayushatharva-brotli4j.brotli4j.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -70,6 +71,11 @@
         <version>${quarkus.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.aayushatharva.brotli4j</groupId>
+        <artifactId>brotli4j</artifactId>
+        <version>${com-aayushatharva-brotli4j.brotli4j.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
